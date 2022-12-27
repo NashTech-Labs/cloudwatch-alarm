@@ -2,7 +2,7 @@ resource "aws_sns_topic" "notification_topic" {
   name = "notification-topic"
 }
 
-resource "aws_sns_topic_subscription" "user_updates_sqs_target" {
+resource "aws_sns_topic_subscription" "sns_email_target" {
   topic_arn = aws_sns_topic.notification_topic.arn
   protocol  = "email"
   endpoint  = var.email_address
