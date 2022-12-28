@@ -7,7 +7,7 @@ This will send the alarm on the email given in the sns subscription.
 
 ## How to use this?
 
-Update the terraform.tfvars file with the variables you want to use
+Update terraform.tfvars file with the variables you want to use
 
 | Variable | Required |
 | :-- | :--: |
@@ -20,6 +20,12 @@ Update the terraform.tfvars file with the variables you want to use
 | alarm_period | false |
 | alarm_threshold | false |
 | cludwatch_alarm_tags | false |
+| ec2_instance_name | false |
+| ami_id | true |
+| instance_type | false |
+| monitoring_ec2 | false |
+| instance_tags | false |
+| key_name | false |
 
 Commands to use:
 - `terraform plan`

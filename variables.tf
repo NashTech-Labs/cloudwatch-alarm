@@ -46,6 +46,41 @@ variable "alarm_threshold" {
 
 variable "cludwatch_alarm_tags" {
   type        = map
-  description = "Variable for alarm threshold"
+  description = "Variable for alarm tags"
   default = {}
+}
+
+variable "ec2_instance_name" {
+  type        = string
+  description = "variable for ec2 instance name"
+  default = "alarm_demo_instance"
+}
+
+variable "ami_id" {
+  type        = string
+  description = "variable for ami for ec2"
+}
+
+variable "instance_type" {
+  type        = string
+  description = "variable for ec2 instance type"
+  default = "t2.micro"
+}
+
+variable "monitoring_ec2" {
+  type        = string
+  description = "variable for ec2 monitoring"
+  default = "true"
+}
+
+variable "instance_tags" {
+  type        = map
+  description = "Variable for instance tags"
+  default = {}
+}
+
+variable "key_name" {
+  type = string
+  description = "variable for the key name that will be used for ssh access"
+  default = ""
 }

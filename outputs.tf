@@ -1,5 +1,5 @@
-output "alarm_name" {
-  value = aws_cloudwatch_metric_alarm.cpu_utilization_metric_alarm.name
+output "alarm_id" {
+  value = aws_cloudwatch_metric_alarm.cpu_utilization_metric_alarm.id
 }
 
 output "alarm_arn" {
